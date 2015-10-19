@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML, CSS &amp; JavaScript</title>
+</head>
+<body>
+	
+	<h1>Simple behavior onclick</h1>
+	<button onclick="alert('hi!')">Click me!</button>
+	<hr>
+
+	<h1>Simple behavior onclick, get the input value then prompt to user</h1>
+	<input type="text" id="your-name" placeholder="please enter your name">
+	<button onclick="do_hi()">Click me!</button>
+
+	<!-- Best practice to put at the bottom of the page before closing tag of the <body> element -->
+	<script type="text/javascript">
+		function do_hi() {
+			var your_name = document.getElementById('your-name').value;
+			alert(your_name);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body onload="alert('hello world!')">
+
+	<input type="text" id="input">
+	<button onclick="say()">Say Hi</button>
+
+	<button onclick="alert('alert string here');">Alert</button>
+
+	<button onclick="read_x()">read x</button>
+	<script type="text/javascript">
+		// alert(1);
+	</script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+
+	<select id="name-list" onchange="on_selection_changed()">
+		<option>Abu</option>
+		<option>Bakar</option>
+		<option>Ali</option>
+	</select>
+
+	<script type="text/javascript">
+		function on_selection_changed() {
+			var name = document.getElementById('name-list').value;
+			alert(name);
+		}
+	</script>
+</body>
+</html>
