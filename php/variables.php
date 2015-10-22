@@ -6,7 +6,11 @@
 	$y = 2.6; // Decimal / Float
 	
 	$array = array('i','am','array'); // Array
+
+	// Available in PHP version > 5.3
 	$array_too = ['i','am','array','too']; // Array
+
+	$users = ['nasrul','hazim','bin','mohamad'];
 	
 	$got_money = true; // Boolean
 	$empty_pocket = false; // Boolean
@@ -15,5 +19,10 @@
 	$txt = "PHP";
 	echo "I love $txt!<br>";
 	echo "I love " . $txt . "!<br>";
-	echo $x + $y;
+	echo $x + $y . '<br>';
+
+	echo 'Got money? '. $got_money . '<br>';
+	echo 'Empty pocket? ' . $empty_pocket . '<br>';
+
+
 ?>

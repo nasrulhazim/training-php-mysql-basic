@@ -19,4 +19,6 @@ echo date('d-m-Y H:i:s') . '<br>';
 date_default_timezone_set('Asia/Kuala_Lumpur');
 echo date_default_timezone_get() . '<br>';
 echo date('d-m-Y H:i:s') . '<br>';
-echo date('d-m-Y H:i:s', strtotime('next week'));
+echo date('l, d-m-Y H:i:s', strtotime('+2 week')) . '<br>';
+// 2015-08-03 09:27:59
+echo 'MysQL Date Format: ' . date('Y-m-d H:i:s');
